@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mad.s10644470.luckynumber.DrawLuckyNumber">
+
+    <Button
+        android:id="@+id/draw"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/editMin"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/ic_launcher"
+        android:onClick="draw"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="隨機號碼大作戰"
+        android:textAlignment="center"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/max"
+        android:layout_alignBottom="@+id/max"
+        android:layout_alignLeft="@+id/display"
+        android:layout_alignStart="@+id/display"
+        android:text="Minimum"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="53dp"
+        android:layout_toEndOf="@+id/min"
+        android:layout_toRightOf="@+id/min"
+        android:text="Maximum"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/max"
+        android:layout_alignEnd="@+id/display"
+        android:layout_alignRight="@+id/display"
+        android:layout_alignTop="@+id/max"
+        android:text="Times"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editMin"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/min"
+        android:layout_alignLeft="@+id/min"
+        android:layout_alignRight="@+id/min"
+        android:layout_alignStart="@+id/min"
+        android:layout_below="@+id/min"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editMin"
+        android:layout_alignEnd="@+id/max"
+        android:layout_alignLeft="@+id/max"
+        android:layout_alignRight="@+id/max"
+        android:layout_alignStart="@+id/max"
+        android:layout_alignTop="@+id/editMin"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editMax"
+        android:layout_alignLeft="@+id/times"
+        android:layout_alignStart="@+id/times"
+        android:layout_alignTop="@+id/editMax" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/draw"
+        android:textSize="30dp"/>
+
+</android.widget.RelativeLayout>
